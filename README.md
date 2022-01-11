@@ -13,17 +13,24 @@ Articles that illustrate the fundamental idea:
 
 ## Preliminary Research
 Using historical data from cryptocompare.com, the principle can be tested against numerous situations like this.
+Evolution of Bitcoin (BTC) price 100 hours from each tweet from Elon Musk containing 'Bitcoin' or 'BTC' (not case-sensitive) since November 2017. Lines show (price after x hours)/(initial price). Grey line represents the sum of the others.
 
 
 ## Buying algorithm
+The algorithm purchases Bitcoin every time Elon Musk posts a tweet containing one of the keywords:
+- 'Bitcoin', 'BTC' (not case-sensitive)
 
 
 ## Selling algorithm
 Four selling methods have been implemented in the project:
- - Fixed time ('fixedtime')
+ - Fixed time ('fixedtime'): sells after a fixed duration in hours 
+ - Percent down ('percentdown'): sells when price reaches a set percentage less than max price reached since buying. PRO: allows for large gains if the price were to augment continuously, while limiting potential losses
+ - Percent up ('percentup'): sells when price reaches a set percentage more than buying price. 
+ - Percent up/down ('percentupdown'): combines percent up and percent down methods.
+
+By testing each of the methods against historical data, their effectiveness can be assessed. This table shows the final money after using each of the methods since November 2017 with a starting capital of 10 000$ and ignoring trading fees as they would not affect how the performance of each method compares.
 
 
-Testing against historical data 
 
 
 ## Performance
