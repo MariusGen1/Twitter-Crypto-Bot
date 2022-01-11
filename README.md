@@ -1,2 +1,38 @@
-# Twitter-Crypto-Bot
-Crypto trading bot built in Python that trades based on Twitter events.
+# Twitter Crypto Bot
+
+A crypto trading bot built in Python that trades based on Twitter events (as of now, Elon Musk's tweets). Utilizes Binance API to fetch prices and buy/sell.
+Will soon be running live, all stats will be available at http://192.168.68.83:80 (updated in realtime, running on a Raspberry Pi).
+
+
+## Idea
+Originally based on the idea that Tweets from certain influential people can heavily affect crypto-currency value short-term. Thus using a bot to buy instantly and sell at the optimal time would allow to make significant gains while investing over short periods of time.
+Articles that illustrate the fundamental idea: 
+ - https://www.coindesk.com/layer2/culture-week/2021/12/14/the-elon-effect-how-musks-tweets-move-crypto-markets/
+ - https://www.vox.com/recode/2021/5/18/22441831/elon-musk-bitcoin-dogecoin-crypto-prices-tesla
+
+
+## Preliminary Research
+Using historical data from cryptocompare.com, the principle can be tested against numerous situations like this.
+
+
+## Buying algorithm
+
+
+## Selling algorithm
+Four selling methods have been implemented in the project:
+ - Fixed time ('fixedtime')
+
+
+Testing against historical data 
+
+
+## Performance
+The bot will be launched and given a starting capital of 100$. From there on it will be left running continuously for an indefinite duration. 
+Live statistics will be publicly available at http://192.168.68.83:80 
+
+
+## Potential Improvements
+- Add AI sentiment analysis (to determine wether the tweet is positive or negative)
+- Add investment options for other currencies such as Ethereum or Dogecoin
+- Use tweets from other influential users as well to improve accuracy
+- Get data from other sources as well such as newspapers
