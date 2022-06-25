@@ -1,4 +1,4 @@
-# Twitter Crypto Bot
+# Twitter Crypto Bot (project in progress)
 
 A crypto trading bot built in Python that trades based on Twitter events (as of now, Elon Musk's tweets). Utilizes Binance API to fetch prices and buy/sell.
 Will soon be running live, all stats will be available at http://192.168.68.83:80 (updated in realtime, running on a Raspberry Pi).
